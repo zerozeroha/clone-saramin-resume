@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이력서 작성 | 사람인</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="https://www.saramin.co.kr/zf_user/">
+        <img src="./assets/logo.png" class="logo" alt="사람인 로고">
+      </a>
+      <div class="my-profile">
+
+        <div class="user-menu">
+          <div class="user-profile">
+            <a href="#" class="menu-item myhome">
+              <img src="./assets/myhome.png" class="header-img-home" alt="집모양 아이콘">
+              MY홈
+            </a>
+          </div>
+          <a href="#" class="menu-item ">
+            <img src="./assets/m.png" class="header-img" alt="돈 아이콘">
+            <span class="badge-number">0</span>
+          </a>
+          <a href="#" class="menu-item user-profile">
+            <img src="./assets/message.png" class="header-img" alt="메세지모양 아이콘">
+          </a>
+          <a href="#" class="menu-item user-profile">
+            <img src="./assets/myinfo.png" class="header-img" alt="복사기모양정보 아이콘">
+          </a>
+          <a href="#" class="menu-item user-profile">
+            <img src="./assets/alert.png" class="header-img alert" alt="종모양 알림 아이콘">
+          </a>
+          <div class="user-profile">
+            <img src="./assets/profile.png" class="profile" alt="프로필사진">
+            <span class="user-name">김하영</span>
+            <img src="./assets/kakaotalk.png" class="kakao-icon" alt="카카오톡 아이콘">
+            <img src="./assets/triangle.png" class="triangle">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <div class="main-container">
+
+      <!-- 왼쪽 본문 -->
+      <div class="main-box">
+
+        <div class="profile-box">
+          <div class="profile-info">
+            <div class="profile-name">
+              <div class="user">
+                <h2>김하영</h2>
+                <select class="user-status">
+                  <option>신입</option>
+                  <option>경력</option>
+                </select>
+              </div>
+              <p class="user-age">여, 1996 (28세)</p>
+            </div>
+
+            <!-- 가려진 정보 보기 -->
+            <div class="eye">
+              <button id="toggleInfo" class="hidden-btn">
+                <img id="eyeIcon" src="assets/icon-eye-off.png" class="icon-eye" alt="눈 아이콘">
+                <span id="toggleText" class="info">가려진 정보 보기</span>
+              </button>
+              <span class="info-text">기업이 이력서 열람/제안시 개인정보는 정상 노출됩니다.</span>
+            </div>
+
+            <!-- 프로필 내용 -->
+            <div class="contact-info">
+
+              <div class="contact-item">
+                <img src="assets/sm-email.png" class="png-icon email-icon" alt="이메일 아이콘">
+                <span class="email" id="email" data-real="duddldml3939@gmail.com">dud*********@gmail.com</span>
+                <div class="empthy"></div>
+                <img src="assets/sm-phone.png" class="png-icon" alt="전화 아이콘">
+                <span id="phone" data-real="010-8631-0457">010-****-0457</span>
+              </div>
+
+              <div class="contact-item">
+                <img src="assets/sm-house.png" class="png-icon" alt="위치 아이콘">
+                <span><a href="압축파일.zip" download="압축파일.zip">압축 파일 다운로드</a>
+                </span>
+              </div>
+
+            </div>
+
+            <!-- 프로필 사진 -->
+            <div class="profile-image">
+              <img src="assets/user-picture.png" class="picture" alt="프로필 이미지">
+              <button class="edit-content">
+                <img src="assets/pencil.png" class="edit-icon" alt="편집 아이콘">
+              </button>
+            </div>
+
+          </div>
+
+          <!-- 이력서 불러오기 -->
+          <button class="resume-import">
+            <div class="import-text">
+              <h2 class="import-title">이력서 불러오기</h2>
+              <div class="import-desc">불러올 이력서를 선택해주세요</div>
+            </div>
+            <i class="icon-plus">﹢</i>
+          </button>
+
+          <!-- 학력 세션 -->
+          <section class="education">
+
+            <div class=" section-header">
+              <h2 class="section-title">학력
+                <span class="section-required">필수</span>
+              </h2>
+              <div class="education-select">
+                <p class="edu">대학교(4년) 졸업</p>
+              </div>
+              <button class="add-btn">+ 추가</button>
+            </div>
+
+            <div class="education-item">
+              <span class="final-edu">최종학력</span>
+              <h3 class="school-name">영남대학교 (4년제) </h3>
+              <p class="date">2015.02 ~ 2022.02 (졸업)</p>
+              <p class="major">정치외교학과</p>
+              <div class="extra-info">
+                <span>학점 | 3.4 / 4.5</span>
+                <span>지역 | 대구</span>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <h3 class="school-name">정화여자고등학교</h3>
+              <p class="date">2012.03 ~ 2015.02 (졸업)</p>
+              <p class="major">문과계열</p>
+            </div>
+
+          </section>
+
+          <!-- 경력 세션 -->
+
+          <section class="education">
+
+            <div class=" section-header">
+              <h2 class="section-title">경력</h2>
+              <button class="add-btn">+ 추가</button>
+            </div>
+
+            <div class="section-item">
+              <p class="section-text">
+                경력사항 또는 인턴, 현장실습 등 급여를 받은 업무경험이 있다면 자유롭게 작성해보세요!
+              </p>
+            </div>
+
+          </section>
+
+          <!-- 스킬 세션 -->
+
+          <section class="education">
+
+            <div class=" section-header">
+              <h2 class="section-title">스킬</h2>
+              <button class="add-btn">+ 추가</button>
+            </div>
+
+            <div class="section-item">
+              <p class="section-text">
+                내 스킬과 역량을 추가해보세요 </p>
+            </div>
+
+          </section>
+
+          <!-- MY Career  세션 -->
+
+          <section class="education">
+
+            <div class=" section-header">
+              <h2 class="section-title">MY Career </h2>
+              <button class="btn-info">마이커리어란?</button>
+              <button class="add-btn">+ 추가</button>
+            </div>
+
+            <div class="section-item">
+              <p class="section-text">
+                ChatGPT API 기반으로 커리어소개 생성하고 나의 이력서를 어필해보세요 ! </p>
+            </div>
+
+          </section>
+
+          <!-- 경험/활동/교육  세션 -->
+
+          <section class="education">
+
+            <div class=" section-header">
+              <h2 class="section-title">경험/활동/교육 </h2>
+              <button class="add-btn">+ 추가</button>
+            </div>
+
+            <div class="section-item">
+              <p class="section-text">
+                교육이수내역, 해외연수, 대내외활동 등의 경험을 작성해보세요! </p>
+            </div>
+
+          </section>
+
+        </div>
+
+      </div>
+
+      <!-- 오른쪽 사이드바 -->
+      <aside>
+        <div class="nav-resume">
+          <div class="progress">
+            <h2 class="nav-title">이력서 완성도 <span class="percentage">100%</span></h2>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+          <div class="completion-message">
+            <p><span class="user-name-resume">김하영</span> 회원님의</p>
+            <p>이력서가 완성됐어요!</p>
+          </div>
+          <hr class="line">
+          <!-- 네비게이션 section -->
+          <nav class="career-nav">
+            <ul class="nav-list">
+              <div class="career-list">
+                <li class="career-item">학력<span class="required">필수</span></li>
+              </div>
+              <li class="career-item">경력</li>
+              <li class="career-item">스킬</li>
+              <li class="career-item-mycareer">My Career</li>
+              <li class="career-item-check">경험/활동/교육<button class="toggle-btn-minus">-</button></li>
+              <li class="career-item">자격/어학/수상<button class="toggle-btn">+</button></li>
+              <li class="career-item">포트폴리오 및 기타문서 <button class="toggle-btn">+</button></li>
+              <li class="career-item">경력기술서 <button class="toggle-btn">+</button></li>
+              <li class="career-item">자기소개서 <button class="toggle-btn">+</button></li>
+              <li class="career-item">사람인 인·적성검사 <button class="toggle-btn">+</button></li>
+              <li class="career-item">취업우대사항 <button class="toggle-btn">+</button></li>
+            </ul>
+            <button class="order-btn">항목 순서 변경</button>
+          </nav>
+
+          <div class="guide-banner">
+            <img src="assets/bulb.png" class="bulb">
+            <p class="guide">이력서 이용 방법을 알려드릴게요!</p>
+            <span class="arrow">›</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer-container">
+      <img src="assets/morebutton.png" class="more">
+      <h3>이력서 제목</h3>
+      <input type="text" class="title-input" placeholder="이력서 제목 (미입력 시 기본 제목으로 자동 저장됩니다.)">
+      <div class="button-group">
+        <button class="footer-btn btn-preview">이력서 미리보기</button>
+        <button class="footer-btn btn-submit">작성완료</button>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
