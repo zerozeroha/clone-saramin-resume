@@ -282,6 +282,7 @@ button {
   cursor: pointer;
   font-size: 14px;
   font-weight: 900;
+  z-index: 100;
 }
 
 .icon-eye {
